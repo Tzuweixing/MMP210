@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tittle></tittle>
+        <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    
+    </head>
+    <body>
+    <a-scene id="3dScene">
+        <a-sphere position="0 1 -3" color="pink" radius="1" shadow>
+        <a-animation attribute="position" dur="3000" to="0 -5 -5" repeat="indefinite"></a-animation>
+            </a-sphere>
+        <a-cone color="orange" position="2 1 -5" radius-bottom="1" radius-top="0.0" height="2">
+            <a-animation attribute="rotation" dur="4000" to="360 360 360" repeat="indefinite"></a-animation>
+        </a-cone>
+         <a-cone color="orange" position="-3 1 -5" radius-bottom="1" radius-top="0.0" height="2">
+            <a-animation attribute="rotation" dur="4000" to="360 360 360" repeat="indefinite"></a-animation>
+        </a-cone>
+       
+        <a-sky color="green"></a-sky> 
+            
+            </a-scene>
+    
+    </body>
+</html>
