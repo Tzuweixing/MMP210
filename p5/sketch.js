@@ -2,8 +2,7 @@
 let xspacing = 10; // change distance between each horizontal location
 let w; // change width of entire wave
 let theta = 0.0; 
-let amplitude = 60
-.0; // change height of wave
+let amplitude = 60.0; // change height of wave
 let period = 50.0; // change number of pixels before the wave repeats
 let dx; // Value for incrementing x
 let yvalues; // Using an array to store height values for the wave
