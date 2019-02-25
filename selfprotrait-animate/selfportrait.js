@@ -66,32 +66,26 @@ function draw(){
     translate(380,200);
      rotate(45);
     fill(247, 120, 161);
-   ellipse(map(mouseX,0,width,-4,4),0,70,60);
+   ellipse(map(mouseX,0,width,-4,4),0,68,58);
+    translate(-9,3);
+    stroke(0);
+    fill(255,192,203);
+    arc(map(mouseX,0,width,-4,4),0, 50, 50,  HALF_PI,2*PI/2);
+    
     pop();
    
     push();
     translate(220,200);
      rotate(100);
     fill(247, 120, 161);
-    ellipse(map(mouseX,0,width,4,-4),0,70,60);
+    ellipse(map(mouseX,0,width,4,-4),0,68,58);
+    translate(9,3);
+    fill(255,192,203);
+    arc(map(mouseX,0,width,4,-4),0, 50, 50,0,PI/2);
     pop();
     
 
     
-    translate(413,250);
-    rotate(85);
-    stroke(0);
-    fill(255,192,203);
-    arc(50, 55, 50, 50, 0, HALF_PI);
-    pop();
-    push();
-     translate(252,-18);
-    rotate(8);
-    
-    fill(255,192,203);
-    
-    arc(50, 55, 50, 50, 0, HALF_PI);
-    pop();
    
     
 }
