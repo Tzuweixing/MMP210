@@ -82,6 +82,15 @@ function draw(){
     translate(9,3);
     fill(255,192,203);
     arc(map(mouseX,0,width,4,-4),0, 50, 50,0,PI/2);
+    translate(200,-150);
+    fill(247, 120, 161);
+    arc(map(mouseX,0,width,4,-5),0,60,60,PI,4*PI/3,open);
+    translate(6,-10);
+    fill(247, 120, 161);
+    arc(map(mouseX,0,width,4,-5),0,50,50,7*PI/6,5*PI/3,open);
+    translate(-16,-7);
+    fill(247, 120, 161);
+     ellipse(map(mouseX,0,width,4,-4),0,20,20);
     pop();
     
 
