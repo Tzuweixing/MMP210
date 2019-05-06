@@ -121,7 +121,7 @@ function keyPressed() {
 //          //background(img5);
 //      }
       else if(key=='f'){
-          fill(0);
+          fill(255,255,255);
           background(255);
           
           playing = true;
