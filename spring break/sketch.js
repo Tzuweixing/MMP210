@@ -25,6 +25,8 @@ function setup() {
     img4=loadImage('image/flight.jpg');
     video = createVideo(['video/5a94a3297a284842a4705e1785398dbe.mov']);
     video.size(100, 100)
+    video.x=0;
+    video.y = 0;
     img5=loadImage('image/IMG_0557.jpg');
     img6=loadImage('image/Distracted-Boyfriend.jpg');
     img7=loadImage('image/IMG_20181123_11461.jpg');
@@ -36,7 +38,8 @@ function draw() {
         image(video, 0,0);
         vidLoad();
     }
-    else{video.pause();}
+    else{video.hide();
+        video.pause();}
 }
 
 function keyPressed() {
