@@ -122,6 +122,7 @@ function keyPressed() {
 //      }
       else if(key=='f'){
           fill(0);
+          background(255);
           
           playing = true;
       }
