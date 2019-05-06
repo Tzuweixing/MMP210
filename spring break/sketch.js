@@ -35,6 +35,7 @@ function setup() {
 
 function draw() {
     if (playing){
+        console.log("test");
         image(video, 0,0);
         vidLoad();
     }
@@ -121,8 +122,9 @@ function keyPressed() {
 //          //background(img5);
 //      }
       else if(key=='f'){
-          fill(255,255,255);
+          
           background(255);
+          fill(255,255,255);
           
           playing = true;
       }
