@@ -38,7 +38,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+ // background(0);
   system.origin.x = mouseX;
   system.origin.y = mouseY;
   system.addParticle();
