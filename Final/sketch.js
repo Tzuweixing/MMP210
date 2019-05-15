@@ -13,7 +13,7 @@ var y;
 
 function preload() {
     soundFormats('mp3');
-  song = loadSound('music/Block B - HER.mp3');
+  song = loadSound('music/Block B - HER.mp3', loaded);
     amp= new p5.Amplitude();
     img= loadImage('image/orange.png');
 }
