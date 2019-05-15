@@ -47,14 +47,14 @@ function draw() {
     //console.log(rms);
   //fill(127);
   //stroke(0);
-    for (let n = 0; n < 100;n++){
+    for (let n = 0; n < 1000;n++){
     a =n *137.3;
     r = c *sqrt(n);
     x = r* cos(a) + width/2;
     y= r * sin(a) + height/2;
     fill((a - r) % 255,255,255);
     noStroke();
-    ellipse(x,y,4,4);
+    ellipse(x,y,300*rms,300*rms);
     };
 
   // Draw an ellipse with size based on volume
