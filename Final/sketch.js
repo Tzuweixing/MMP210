@@ -47,7 +47,7 @@ function draw() {
     //console.log(rms);
   //fill(127);
   //stroke(0);
-    for (let n = 0; n > 100;n++){
+    for (let n = 0; n < 100;n++){
     a =n *137.3;
     r = c *sqrt(n);
     x = r* cos(a) + width/2;
