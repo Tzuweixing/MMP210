@@ -48,13 +48,15 @@ function draw() {
   //fill(127);
   //stroke(0);
     for (let n = 0; n < frameCount;n++){
+        console.log(frameCount);
     a =n *137.3;
     r = c *sqrt(n);
     x = r* cos(a) + width/2;
     y= r * sin(a) + height/2;
     fill((a - r) % 255,255,255);
     noStroke();
-    ellipse(x,y,300*rms,300*rms);
+   // ellipse(x,y,300*rms,300*rms);
+        ellipse(x,y, 10,10);
     };
 
   // Draw an ellipse with size based on volume
