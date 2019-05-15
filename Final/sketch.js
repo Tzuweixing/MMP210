@@ -4,7 +4,7 @@ let button;
 var amp;
 let rms;
 let img;
-var n= 0;
+//var n= 0;
 var c= 4;
 var a;
 var r;
@@ -38,7 +38,7 @@ function setup() {
 }
 
 function draw() {
- // background(0);
+  background(0);
   system.origin.x = mouseX;
   system.origin.y = mouseY;
   system.addParticle();
@@ -47,7 +47,7 @@ function draw() {
     //console.log(rms);
   //fill(127);
   //stroke(0);
-    
+    for (let n = 0; n < 100;n++){
     a =n *137.3;
     r = c *sqrt(n);
     x = r* cos(a) + width/2;
@@ -55,8 +55,7 @@ function draw() {
     fill((a - r) % 255,255,255);
     noStroke();
     ellipse(x,y,4,4);
-    
-    n++;
+    };
 
   // Draw an ellipse with size based on volume
     push();
