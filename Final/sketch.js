@@ -15,7 +15,7 @@ function preload() {
     soundFormats('mp3');
   song = loadSound('music/Block B - HER.mp3');
     amp= new p5.Amplitude();
-    img= loadImage('image/orange_sm.png');
+    img= loadImage('image/orange.png');
 }
 
 function loaded(){
