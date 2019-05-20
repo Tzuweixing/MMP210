@@ -55,7 +55,7 @@ function draw() {
     y= r * sin(a) + height/2;
     fill((a - r) % 255,255,255);
     noStroke();
-  ellipse(x,y,300*rms,300*rms);
+  ellipse(x,y,100*rms,100*rms);
         //ellipse(x,y, 20,10);
     };
 
