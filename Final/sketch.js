@@ -21,7 +21,7 @@ function preload() {
 function loaded(){
     button = createButton("play");
     //button.mousePressed(togglePlaying);
-    buttton.keyPressed(togglePlaying);
+    //buttton.keyPressed(togglePlaying);
 }
 function keyPressed() {
   let keyIndex = -1;
@@ -31,13 +31,17 @@ function keyPressed() {
   if (keyIndex === -1) {
     // If it's not a letter key, clear the screen
     background(0);
-  } else {
+  } 
+    else(song.isPlaying) {
       if(key=='a'){
           song.play();
+          playing = true;
 
       }
-      if(key=='b'){
+      else if(key=='b'){
          song.stop();
+          playing = false;
+          
       }
       
       
@@ -147,16 +151,16 @@ ParticleSystem.prototype.run = function() {
   }
 };
 
-function togglePlaying(){
-    if(!song.isPlaying()){
-        song.play();
-        song.setVolume(0.3);
-   button.html("pause");
+// function togglePlaying(){
+//     if(!song.isPlaying()){
+//         song.play();
+//         song.setVolume(0.3);
+//    button.html("pause");
         
-    }
-    else{
-        song.stop();
-        button.html("play");
-    }
-}
+//     }
+//     else{
+//         song.stop();
+//         button.html("play");
+//     }
+// }
 
