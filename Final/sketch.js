@@ -32,13 +32,13 @@ function keyPressed() {
     // If it's not a letter key, clear the screen
     background(0);
   } 
-    else(song.isPlaying) {
-      if(key=='a'){
+    else {
+      if(key=='a' && !song.isPlaying()){
           song.play();
           playing = true;
 
       }
-      else if(key=='b'){
+      else if(key=='b' && song.isPlaying()){
          song.stop();
           playing = false;
           
