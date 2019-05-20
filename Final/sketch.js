@@ -20,7 +20,19 @@ function preload() {
 
 function loaded(){
     button = createButton("play");
-    button.mousePressed(togglePlaying);
+    //button.mousePressed(togglePlaying);
+}
+function keyPressed() {
+  let keyIndex = -1;
+  if (key >= 'a' && key <= 'z') {
+    keyIndex = key.charCodeAt(0) - 'a'.charCodeAt(0);
+  }
+  if (keyIndex === -1) {
+    // If it's not a letter key, clear the screen
+    background(230);
+  } else {
+ buttton.keyPressed(togglePlaying);
+  }
 }
 
 function setup() {
@@ -55,7 +67,7 @@ function draw() {
     y= r * sin(a) + height/2;
     fill((a - r) % 255,255,255);
     noStroke();
-  ellipse(x,y,300*rms,300*rms);
+  ellipse(x,y,100*rms,100*rms);
         //ellipse(x,y, 20,10);
     };
 
