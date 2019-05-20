@@ -21,6 +21,7 @@ function preload() {
 function loaded(){
     button = createButton("play");
     //button.mousePressed(togglePlaying);
+    buttton.keyPressed(togglePlaying);
 }
 function keyPressed() {
   let keyIndex = -1;
@@ -29,9 +30,17 @@ function keyPressed() {
   }
   if (keyIndex === -1) {
     // If it's not a letter key, clear the screen
-    background(230);
+    background(0);
   } else {
- buttton.keyPressed(togglePlaying);
+      if(key=='a'){
+          song.play();
+
+      }
+      if(key=='b'){
+         song.stop();
+      }
+      
+      
   }
 }
 
